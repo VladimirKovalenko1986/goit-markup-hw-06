@@ -105,7 +105,8 @@ ul {
   font-family: inherit;
 
   font-size: 16px;
-  letter-spacing: inherit;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
 }
 
 .visually-hidden {
@@ -265,15 +266,10 @@ ul {
 }
 
 .hero-btn {
-  min-width: 216px;
   padding: 10px 32px;
 
   background-color: var(--color-text-logonav);
   color: var(--color-hero-title);
-
-  font-weight: 700;
-  line-height: 1.9;
-  letter-spacing: 0.06em;
 
   transition: background-color 250ms var(--cubic-all),
     box-shadow 250ms var(--cubic-all);
@@ -802,11 +798,6 @@ ul {
   background-color: var(--color-text-logonav);
   color: var(--color-hero-title);
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.06em;
-
   transition: background-color 250ms var(--cubic-all),
     box-shadow 250ms var(--cubic-all);
 }
@@ -1053,8 +1044,6 @@ ul {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 200px;
-  height: 50px;
   padding: 10px 52px;
 
   color: var(--color-hero-title);
