@@ -754,7 +754,7 @@ ul {
 }
 
 .wrapper-conteiner-form {
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .conteiner-form {
@@ -858,15 +858,14 @@ ul {
   background-color: var(--color-hero-title);
 
   transform: scale(1) translate(-50%, -50%);
-  transition: transform 250ms var(--cubic-all);
 }
 
 .close-button svg {
   fill: var(--color-logo-text);
 }
 
-.close-button svg:hover,
-.close-button svg:focus {
+.close-button:hover svg,
+.close-button:focus svg {
   fill: var(--color-text-logonav);
 }
 
@@ -887,6 +886,8 @@ ul {
   /* outline: 1px solid tomato; */
 
   background-color: var(--color-hero-title);
+
+  transition: transform 250ms var(--cubic-all);
 }
 
 .modal-text {
@@ -911,6 +912,11 @@ ul {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+}
+
+.modal-conteiner label,
+.modal-conteiner-coment label {
+  margin-bottom: 4px;
 }
 
 .modal-conteiner-coment {
@@ -971,7 +977,10 @@ ul {
 }
 
 .modal-conteiner-checkbox {
-  margin: 0 0 30px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .input-checkbox {
@@ -1012,15 +1021,40 @@ ul {
 }
 
 .label-checkbox a {
+  position: relative;
+  display: block;
+  text-decoration: none;
   margin-left: 5px;
 
   color: var(--color-text-logonav);
+}
+
+.label-checkbox a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 100%;
+  height: 0.5px;
+
+  background-color: var(--color-text-logonav);
+}
+
+.input-checkbox:checked + .label-checkbox .modal-checkbox {
+  background-color: var(--color-text-logonav);
+  border: 3px solid var(--color-text-logonav);
+}
+
+.input-checkbox:focus + .label-checkbox .modal-checkbox {
+  cursor: pointer;
 }
 
 .modal-form-btn {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 200px;
+  height: 50px;
   padding: 10px 52px;
 
   color: var(--color-hero-title);
@@ -1033,9 +1067,4 @@ ul {
 .modal-form-btn:hover,
 .modal-form-btn:focus {
   background-color: var(--color-btn-hero-active);
-}
-
-.input-checkbox:checked + .label-checkbox .modal-checkbox {
-  background-color: var(--color-text-logonav);
-  border: 3px solid var(--color-text-logonav);
 }

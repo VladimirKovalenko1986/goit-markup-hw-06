@@ -633,13 +633,14 @@
                 placeholder="E-mail"
                 class="footer-form-input"
               />
-            </form>
-            <button type="submit" class="btn-footer-form btn">
+              <button type="submit" class="btn-footer-form btn">
               Підписатися
               <svg width="24" height="24" class="">
                 <use xlink:href="./images/icon.svg#icon-sendbtn"></use>
               </svg>
             </button>
+            </form>
+            
           </div>
         </div>
       </div>
@@ -653,9 +654,9 @@
           <use xlink:href="./images/icon.svg#icon-close-model"></use>
         </svg>
       </button>
-      <p class="modal-text">Залиште свої дані, ми вам передзвонимо</p>
 
       <form class="modal-form">
+        <p class="modal-text">Залиште свої дані, ми вам передзвонимо</p>
         <div class="modal-conteiner">
           <label for="name">Ім'я</label>
           <div class="wrapper-input">
@@ -676,7 +677,7 @@
             <input
               type="text"
               name="user name"
-              id="name"
+              id="tel"
               class="modal-input"
             /><svg width="18" height="18" class="">
               <use xlink:href="./images/icon.svg#icon-modal-tel"></use>
@@ -690,7 +691,7 @@
             <input
               type="text"
               name="user name"
-              id="name"
+              id="mail"
               class="modal-input"
             /><svg width="18" height="18" class="">
               <use xlink:href="./images/icon.svg#icon-modal-email"></use>
@@ -724,8 +725,9 @@
             <a href="">Умови договору</a></label
           >
         </div>
+        <button type="submit" class="modal-form-btn btn">Відправити</button>
       </form>
-      <button type="submit" class="modal-form-btn btn">Відправити</button>
+      
     </div>
 
     <!-- Java script -->
